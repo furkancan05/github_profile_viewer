@@ -1,3 +1,9 @@
+:root {
+  --text-color: rgb(209, 208, 208);
+  --text-color-dark: black;
+  --card-color: rgb(230, 230, 230);
+}
+
 * {
   border: none;
   outline: none;

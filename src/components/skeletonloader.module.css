@@ -1,0 +1,36 @@
+.detailsContainer {
+  width: 100%;
+  padding: 2rem 0;
+  display: grid;
+  gap: 2rem;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+}
+
+.detailsCard {
+  flex: 1;
+  min-width: 16rem;
+  height: 8rem;
+  border-radius: 0.5rem;
+  background: var(--card-color);
+  background-image: linear-gradient(
+    to right,
+    var(--card-color) 0%,
+    #c9c9c9 20%,
+    var(--card-color) 40%,
+    var(--card-color) 100%
+  );
+  background-repeat: no-repeat;
+  background-size: 800px 100%;
+  position: relative;
+  animation: shimmer 1.5s infinite linear;
+}
+
+@keyframes shimmer {
+  0% {
+    background-position: -468px 0;
+  }
+
+  100% {
+    background-position: 468px 0;
+  }
+}

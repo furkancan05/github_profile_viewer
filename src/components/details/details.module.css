@@ -1,0 +1,59 @@
+.container {
+  width: 100%;
+  padding: 2rem 0;
+  display: grid;
+  gap: 2rem;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+}
+
+.card {
+  display: flex;
+  align-items: center;
+  flex: 1;
+  min-width: 16rem;
+  height: 8rem;
+  background-color: var(--card-color);
+  color: var(--text-color-dark);
+  border-radius: 0.5rem;
+}
+
+.icon {
+  margin-inline: 1.5rem;
+  width: 5rem;
+  height: 5rem;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+}
+
+.icon:first-child {
+  font-size: 32px;
+}
+
+.value {
+  font-weight: bold;
+  font-size: 32px;
+}
+
+.name {
+  font-size: 18px;
+}
+
+@media (max-width: 767px) {
+  .icon {
+    width: 4rem;
+    height: 4rem;
+  }
+
+  .icon:first-child {
+    font-size: 28px;
+  }
+
+  .value {
+    font-size: 24px;
+  }
+
+  .name {
+    font-size: 14px;
+  }
+}
