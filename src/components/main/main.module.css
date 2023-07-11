@@ -1,0 +1,175 @@
+.main {
+  width: 100%;
+  border-radius: 0.5rem;
+  background-color: var(--card-color);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1.5rem;
+  gap: 2rem;
+}
+
+.userDatas {
+  width: fit-content;
+  height: fit-content;
+}
+
+.userMainDatas {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.profilePhoto {
+  background-color: black;
+  width: 8rem;
+  height: 8rem;
+  border-radius: 50%;
+}
+
+.userTexts {
+  flex-direction: column;
+  margin-inline: 1.5rem;
+}
+
+.nameText {
+  font-weight: bold;
+  color: var(--text-color-dark);
+  cursor: default;
+}
+
+.usernameText {
+  color: var(--link-color);
+  cursor: pointer;
+}
+
+.usernameText::before {
+  content: "@";
+}
+
+.followButton {
+  border: 1px solid var(--link-color);
+  padding: 0.5rem 1.6rem;
+  border-radius: 50rem;
+  color: var(--link-color);
+  font-size: 20px;
+  letter-spacing: 0.2rem;
+  cursor: pointer;
+}
+
+.userDescription {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.6rem;
+}
+
+.content {
+  color: var(--text-color-dark);
+  font-size: 18px;
+}
+
+.location {
+  color: var(--text-color-dark);
+}
+
+.text {
+  font-size: 18px;
+}
+
+.link {
+  color: var(--link-color);
+}
+
+.icons {
+  color: var(--link-color);
+  font-size: 24px;
+  margin-right: 0.5rem;
+}
+
+.followingUsers {
+  width: 100%;
+  display: grid;
+  gap: 2rem;
+  flex-wrap: wrap;
+  grid-template-columns: repeat(auto-fit, minmax(13rem, 1fr));
+}
+
+.fcard {
+  background-color: var(--card-color);
+  border-radius: 0.5rem;
+  padding: 1rem 3rem;
+  gap: 0.5rem;
+  box-shadow: 0.2rem 0.2rem 1rem rgb(189, 189, 189);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.fprofilePhoto {
+  width: 5rem;
+  height: 5rem;
+  border-radius: 50%;
+  background-color: black;
+}
+
+.fusername {
+  color: var(--text-color-dark);
+  font-weight: bold;
+  font-size: 18px;
+  cursor: default;
+}
+
+.fviewButton {
+  background-color: var(--link-color);
+  color: white;
+  letter-spacing: 0.2rem;
+  border-radius: 0.3rem;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+.fviewButton:hover {
+  background-color: rgb(0, 166, 231);
+  color: var(--text-color-dark);
+}
+
+.pageButtons {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  gap: 0.5rem;
+}
+
+.pageButton {
+  background-color: var(--link-color);
+  font-size: 20px;
+  color: white;
+  width: 2rem;
+  aspect-ratio: 1/1;
+  border-radius: 0.3rem;
+  cursor: pointer;
+}
+
+.activePageButton {
+  background-color: rgb(0, 166, 231);
+  color: black;
+}
+
+.noContentText {
+  color: var(--text-color-dark);
+  font-size: 18px;
+}
+
+@media (max-width: 767px) {
+  .userMainDatas {
+    display: flex;
+    flex-direction: column;
+    gap: 0.6rem;
+  }
+
+  .nameText {
+    text-align: center;
+  }
+}
