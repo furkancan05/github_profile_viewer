@@ -1,4 +1,4 @@
-import { DetailItems } from "@/types/details";
+import { DetailItems } from "@/types/userDatas";
 import { BiBookBookmark, BiUser, BiUserPlus, BiCode } from "react-icons/bi";
 
 export const detailItems: DetailItems = [
